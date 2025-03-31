@@ -7,6 +7,8 @@ import RequestList from "./pages/RequestList";
 import RequestBlood from "./pages/RequestBlood";
 import Login from "./pages/Login"; 
 import Signup from "./pages/Signup";
+import DonateNow from "./pages/DonateNow";
+import FindDonor from "./pages/FindDonor";
 import "./styles/Navbar.css";
 
 function App() {
@@ -22,10 +24,13 @@ function App() {
                 <Link to="/signup">Signup</Link>
             </nav>
             <Routes>
+                <Route path="/" element={<Home />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/requests" element={<RequestList/>} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/donors" element={<Donors />} />
+                <Route path="/donate" element={<DonateNow />} />
+                <Route path="/find-donor" element={<FindDonor />} />
                 <Route path="/request-blood" element={<RequestBlood />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />

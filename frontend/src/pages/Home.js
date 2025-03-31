@@ -5,6 +5,14 @@ import { getDonors } from "../api";
 import BloodDonationImg from "../assets/img1.jpg";
 import EmergencyImg from "../assets/img4.jpg";
 import TrackingImg from "../assets/img8.png";
+
+import BlogImg1 from "../assets/img2.jpg";  
+import BlogImg2 from "../assets/img3.jpg";  
+import BlogImg3 from "../assets/img5.jpg"; 
+
+import male from "../assets/male-person.png"; 
+import female from "../assets/female-person.png";
+
 // import FAQ from "./FAQ";
 // import Footer from "./Footer";
 
@@ -16,8 +24,14 @@ const HeroSection = () => {
                 <h1>Donate Blood, Save Lives ❤️</h1>
                 <p>Every drop counts. Your donation can make a difference in someone's life.</p>
                 <div className="hero-buttons">
-                    <button className="btn donate-btn">Donate Now</button>
-                    <button className="btn find-donor-btn">Find a Donor</button>
+                <button className="btn donate-btn" onClick={() => window.location.href = "/register"}>
+                        Donate Now
+                    </button>
+
+                    {/* Redirect to View Donors Page */}
+                    <button className="btn find-donor-btn" onClick={() => window.location.href = "/donors"}>
+                        Find a Donor
+                    </button>
                 </div>
             </div>
         </section>
@@ -105,17 +119,20 @@ const BlogsSection = () => {
                 {
                     title: "The Importance of Regular Blood Donation",
                     summary: "Discover why regular blood donation is vital for saving lives and maintaining health.",
-                    image: "/images/blood-donation.jpg",
+                    image: BlogImg1,
+                    url: "https://www.redcrossblood.org/local-homepage/news/article/blood-donation-importance.html",
                 },
                 {
                     title: "How to Prepare for Blood Donation",
                     summary: "Learn the steps to take before and after donating blood to ensure a safe experience.",
-                    image: "/images/donation-tips.jpg",
+                    image: BlogImg2,
+                    url: "https://www.redcrossblood.org/donate-blood/blood-donation-process/before-during-after.html",
                 },
                 {
                     title: "Understanding Blood Types and Compatibility",
                     summary: "A guide to blood types and how they impact transfusions and donations.",
-                    image: "/images/blood-types.jpg",
+                    image: BlogImg3,
+                    url: "https://www.redcrossblood.org/donate-blood/blood-types.html",
                 }
             ];
             setBlogs(blogData);
@@ -125,7 +142,7 @@ const BlogsSection = () => {
 
     return (
         <section className="blogs-section">
-            <h2>Latest Blogs</h2>
+            <h2>Related Blogs</h2>
             <div className="blogs-container">
                 {blogs.map((blog, index) => (
                     <div key={index} className="blog-card">
@@ -133,7 +150,12 @@ const BlogsSection = () => {
                         <div className="blog-content">
                             <h3>{blog.title}</h3>
                             <p>{blog.summary}</p>
-                            <button className="btn read-more-btn">Read More</button>
+                            <button 
+                                className="btn read-more-btn" 
+                                onClick={() => window.open(blog.url, "_blank", "noopener,noreferrer")}
+                            >
+                                Read More
+                            </button>
                         </div>
                     </div>
                 ))}
@@ -153,17 +175,17 @@ const Testimonials = () => {
                 {
                     name: "Aarav Sharma",
                     feedback: "Donating blood was a life-changing experience! The process was smooth, and I felt great knowing I helped someone.",
-                    image: "/images/user1.jpg",
+                    image: male,
                 },
                 {
                     name: "Neha Patel",
                     feedback: "I was able to find a donor for my father in an emergency. This platform is truly a lifesaver!",
-                    image: "/images/user2.jpg",
+                    image: female,
                 },
                 {
                     name: "Rahul Verma",
                     feedback: "A great initiative that makes blood donation easy and accessible for everyone. Highly recommended!",
-                    image: "/images/user3.jpg",
+                    image: male,
                 },
             ];
             setTestimonials(testimonialData);
@@ -214,7 +236,7 @@ const Footer = () => {
                     <h3>Contact Us</h3>
                     <p>Email: support@blooddonation.com</p>
                     <p>Phone: +91 98765 43210</p>
-                    <p>Address: 123 Blood Drive, City, Country</p>
+                    <p>Address: 123 Blood Drive, Kolhapur,India</p>
                 </div>
 
                 <div className="footer-section">

@@ -13,6 +13,12 @@
     color: #D32F2F;
 }
 
+.login h2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .auth-container form {
     display: flex;
     flex-direction: column;

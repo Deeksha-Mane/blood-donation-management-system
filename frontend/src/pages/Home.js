@@ -41,7 +41,7 @@ const HeroSection = () => {
 // ✅ Services Section
 const Services = () => {
     return (
-        <section className="services-section">
+        <section className="services-section" id="services">
             <h2>Our Services</h2>
             <div className="services-container">
                 <div className="service-card">
@@ -141,7 +141,7 @@ const BlogsSection = () => {
     }, []);
 
     return (
-        <section className="blogs-section">
+        <section className="blogs-section" id="blogs">
             <h2>Related Blogs</h2>
             <div className="blogs-container">
                 {blogs.map((blog, index) => (
@@ -225,10 +225,9 @@ const Footer = () => {
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#blogs">Blogs</a></li>
                     </ul>
                 </div>
 

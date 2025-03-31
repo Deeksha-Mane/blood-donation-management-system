@@ -1,0 +1,86 @@
+.about-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #d9534f;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-intro {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 25px;
+    font-weight: 500;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #d9534f;
+  }
+  
+  .about-section {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  h2 {
+    color: #5a5a5a;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #d9534f;
+    padding-bottom: 5px;
+    display: inline-block;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background: url("../assets/hero-section-img.jpg") no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  .donate-button {
+    background-color: #d9534f;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .donate-button:hover {
+    background-color: #c9302c;
+  }
+  
+  a {
+    color: #d9534f;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

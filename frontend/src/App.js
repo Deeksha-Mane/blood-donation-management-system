@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import DonateNow from "./pages/DonateNow";
 import FindDonor from "./pages/FindDonor";
+import About from "./pages/About";
 import "./styles/Navbar.css";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
                 <Route path="/request-blood" element={<RequestBlood />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
+                <Route path="/about" element={<About />} />
             </Routes>
         </Router>
     );

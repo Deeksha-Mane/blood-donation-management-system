@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #e63946;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    height: 40px;
+}
+
+.navbar a {
+    color: white;
+    opacity: 0.8;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    opacity: 1;
+}

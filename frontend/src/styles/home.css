@@ -1,0 +1,503 @@
+/* home.css - Styling for Home Page */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    color: #d9534f;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #d9534f;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #ffcccc;
+    transition: 0.3s;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    table {
+        font-size: 14px;
+    }
+}
+
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img7.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #c82333;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.donate-btn {
+    background-color: #e63946;
+    color: white;
+}
+
+.donate-btn:hover {
+    background-color: #c82333;
+}
+
+.find-donor-btn {
+    background-color: white;
+    color: #e63946;
+    border: 2px solid #e63946;
+}
+
+.find-donor-btn:hover {
+    background-color: #e63946;
+    color: white;
+}
+
+/* ========================= */
+/* 🔹 Our Services Section 🔹 */
+/* ========================= */
+.services-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    color: #f3251e;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* 🔹 Services Container */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* 🔹 Individual Service Card */
+.service-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 🔹 Service Image */
+.service-card img {
+    width: 200px;  /* Adjust size as needed */
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* 🔹 Service Title */
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #d9534f;
+}
+
+/* 🔹 Service Description */
+.service-card p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 🔹 Hover Effects */
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+    .services-section h2 {
+        font-size: 2rem;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+}
+
+/* Blood Information Section */
+.blood-info-section {
+    background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.blood-info-section h2 {
+    font-size: 2.5rem;
+    color: #d32f2f;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.blood-info-section p {
+    font-size: 1.2rem;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+/* Blood Group Cards Container */
+.blood-group-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Individual Blood Group Cards */
+.blood-group-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated Hover Effect */
+.blood-group-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Decorative Blood Drop */
+.blood-group-card::before {
+    content: "🩸";
+    font-size: 3rem;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    opacity: 0.2;
+}
+
+/* Blood Group Title */
+.blood-group-card h3 {
+    font-size: 2rem;
+    color: #b71c1c;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Description Text */
+.blood-group-card p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* Animated Blood Drop on Hover */
+.blood-group-card:hover::before {
+    opacity: 0.65;
+    transform: rotate(15deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blood-group-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blood-group-card {
+        width: 90%;
+    }
+}
+
+/* Blogs Section */
+.blogs-section {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.blogs-section h2 {
+    font-size: 2rem;
+    color: #d9534f;
+    margin-bottom: 20px;
+}
+
+.blogs-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blog-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card .blog-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-card .blog-content {
+    padding: 10px;
+}
+
+.blog-card h3 {
+    font-size: 1.5rem;
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.read-more-btn {
+    background: #d9534f;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background: #c9302c;
+}
+
+/* ✅ Testimonials Section */
+.testimonials-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #d9534f; /* Blood red theme */
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #d9534f; /* Blood red border */
+}
+
+.testimonial-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial-content p {
+    font-size: 1rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* ✅ Footer Section */
+.footer {
+    background-color: #d9534f; /* Blood red theme */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f1c40f; /* Golden highlight */
+}
+
+/* ✅ Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #f1c40f;
+}
+
+/* ✅ Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid white;
+    font-size: 0.9rem;
+}
